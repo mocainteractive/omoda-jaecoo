@@ -1,0 +1,963 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Omoda Jaecoo Italia, analisi competitiva e di mercato, maggio 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<style>
+:root{
+  --rosso:#E52217;--bianco:#FFFFFF;--grigio-chiaro:#F4F5F6;--grigio-scuro:#191919;--grigio-testo:#595959;
+  --verde:#118541;--blu:#5781FF;--viola:#551FC4;--rosa:#CE2A59;--arancione:#DB5E29;--grigio-grafico:#484848;
+  --r100:#FF5147;--r60:#FF9189;--r10:#FFE7E6;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Figtree','Helvetica Neue',Arial,sans-serif;font-weight:400;font-size:12px;color:var(--grigio-testo);background:var(--bianco);line-height:1.6}
+h1,h2,h3,h4,h5{font-family:'Figtree','Helvetica Neue',Arial,sans-serif;color:var(--grigio-scuro);font-weight:500;text-transform:uppercase;letter-spacing:.01em}
+h1{font-size:42px;font-weight:700;line-height:1.05}
+h2{font-size:24px;font-weight:500;margin-bottom:14px}
+h3{font-size:16px;font-weight:700;margin:18px 0 8px}
+h4{font-size:13px;font-weight:700;margin:14px 0 6px}
+h5{font-size:11px;font-weight:700;margin:10px 0 4px}
+p{margin-bottom:10px;font-size:12px;color:var(--grigio-testo)}
+p.lead{font-size:13px;color:var(--grigio-scuro)}
+strong{font-weight:700;color:inherit}
+em{font-style:italic;color:var(--grigio-scuro)}
+ul{list-style:none;padding-left:0;margin:8px 0 12px}
+ul li{position:relative;padding-left:18px;margin-bottom:6px;font-size:12px;color:var(--grigio-testo)}
+ul li::before{content:"";position:absolute;left:0;top:7px;width:6px;height:6px;border-radius:50%;background:var(--rosso)}
+a{color:var(--rosso);text-decoration:none}
+a:hover{text-decoration:underline}
+sup{font-size:9px;color:var(--rosso);font-weight:700}
+sup a{color:var(--rosso)}
+
+.wrap{max-width:1320px;margin:0 auto;padding:0 32px}
+.hero{background:var(--grigio-scuro);color:var(--bianco);padding:60px 0 80px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-100px;top:-100px;width:400px;height:400px;border-radius:50%;background:var(--rosso);opacity:.18}
+.hero::after{content:"";position:absolute;left:-50px;bottom:-150px;width:300px;height:300px;border-radius:50%;background:var(--r60);opacity:.1}
+.hero-row{display:flex;justify-content:space-between;align-items:flex-start;gap:40px;position:relative;z-index:2}
+.hero-left{flex:1;max-width:760px}
+.hero-right{flex:0 0 auto;text-align:right}
+.hero-right img{height:46px;width:auto}
+.hero h1{color:var(--bianco)}
+.hero .kicker{display:inline-block;background:var(--rosso);color:var(--bianco);padding:6px 14px;font-weight:700;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px}
+.hero p{color:#cfcfcf;font-size:14px;max-width:720px;margin-top:14px}
+.hero .meta{display:flex;gap:30px;margin-top:30px;padding-top:24px;border-top:1px solid #333;flex-wrap:wrap}
+.hero .meta div span{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#888;font-weight:600}
+.hero .meta div strong{display:block;color:var(--bianco);font-size:14px;font-weight:600;margin-top:4px}
+
+.toc{background:var(--grigio-chiaro);padding:24px 0;border-bottom:1px solid #e2e2e2;position:sticky;top:0;z-index:10}
+.toc-inner{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.toc a{display:block;padding:10px 12px;background:var(--bianco);border-left:3px solid var(--rosso);color:var(--grigio-scuro);font-weight:600;font-size:10px;text-transform:uppercase;letter-spacing:.04em;transition:.2s;line-height:1.3}
+.toc a:hover{background:var(--grigio-scuro);color:var(--bianco);text-decoration:none}
+.toc a small{display:block;font-weight:400;font-size:9px;color:var(--grigio-testo);margin-top:2px;text-transform:none;letter-spacing:0}
+.toc a:hover small{color:#cfcfcf}
+
+section{padding:56px 0;border-bottom:1px solid #ececec}
+section:nth-child(even){background:var(--grigio-chiaro)}
+.section-tag{display:inline-block;background:var(--rosso);color:var(--bianco);padding:4px 10px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px}
+
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+
+.kpi{background:var(--bianco);border:1px solid #e6e6e6;padding:22px;border-left:4px solid var(--rosso)}
+.kpi .label{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--grigio-testo);font-weight:600}
+.kpi .value{font-size:32px;font-weight:700;color:var(--grigio-scuro);margin:6px 0 4px;line-height:1}
+.kpi .delta{font-size:11px;font-weight:600;color:var(--verde)}
+.kpi .delta.neg{color:var(--rosso)}
+.kpi small{display:block;color:var(--grigio-testo);font-size:11px;margin-top:6px}
+
+.card{background:var(--bianco);border:1px solid #e6e6e6;padding:22px;height:100%}
+.card h3{margin-top:0}
+.card .price{display:inline-block;background:var(--grigio-scuro);color:var(--bianco);padding:3px 10px;font-size:11px;font-weight:600;margin-bottom:10px}
+
+table{width:100%;border-collapse:collapse;font-size:11px;margin:14px 0;background:var(--bianco)}
+th{background:var(--grigio-scuro);color:var(--bianco);padding:10px 12px;text-align:left;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:10px}
+td{padding:10px 12px;border-bottom:1px solid #ececec;color:var(--grigio-testo)}
+tr:hover td{background:#fafafa}
+td.right{text-align:right;font-variant-numeric:tabular-nums}
+td.brand{font-weight:700;color:var(--grigio-scuro)}
+
+.chart-box{background:var(--bianco);border:1px solid #e6e6e6;padding:22px;margin:14px 0}
+.chart-box h4{margin-top:0;margin-bottom:14px;color:var(--grigio-scuro)}
+.chart-box .source{font-size:10px;color:var(--grigio-testo);margin-top:8px;font-style:italic}
+.chart-wrapper{position:relative;height:340px}
+.chart-wrapper.tall{height:420px}
+
+.callout{background:var(--bianco);border-left:4px solid var(--rosso);padding:18px 22px;margin:18px 0}
+.callout.dark{background:var(--grigio-scuro);color:var(--bianco);border-left-color:var(--rosso)}
+.callout.dark p,.callout.dark li{color:#dadada}
+.callout h4{margin-top:0;color:var(--grigio-scuro)}
+.callout.dark h4{color:var(--bianco)}
+
+.cluster-head{background:var(--grigio-scuro);color:var(--bianco);padding:14px 20px;display:flex;justify-content:space-between;align-items:center;margin-top:26px}
+.cluster-head h3{color:var(--bianco);margin:0}
+.cluster-head .price-range{background:var(--rosso);padding:4px 10px;font-size:11px;font-weight:600}
+
+.pill{display:inline-block;background:var(--grigio-chiaro);color:var(--grigio-scuro);padding:3px 9px;font-size:10px;font-weight:600;border-radius:2px;margin-right:4px;text-transform:uppercase;letter-spacing:.04em}
+.pill.green{background:#e8f5ed;color:var(--verde)}
+.pill.red{background:var(--r10);color:var(--rosso)}
+.pill.blue{background:#e8edff;color:var(--blu)}
+.pill.orange{background:#fce5d6;color:var(--arancione)}
+
+.scoreboard{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin:18px 0}
+.score{background:var(--bianco);border:1px solid #e6e6e6;padding:18px;text-align:center}
+.score .pos{display:inline-block;width:32px;height:32px;border-radius:50%;background:var(--rosso);color:var(--bianco);font-weight:700;font-size:14px;line-height:32px;margin-bottom:8px}
+.score .brand-name{font-weight:700;color:var(--grigio-scuro);font-size:13px;text-transform:uppercase}
+.score .tag{font-size:10px;color:var(--grigio-testo);margin-top:6px;text-transform:uppercase;letter-spacing:.05em}
+
+.glossary{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gloss-item{background:var(--bianco);padding:14px 18px;border-left:3px solid var(--rosso)}
+.gloss-item .term{font-weight:700;color:var(--grigio-scuro);text-transform:uppercase;font-size:11px;letter-spacing:.04em;display:block;margin-bottom:4px}
+.gloss-item .def{font-size:11px;color:var(--grigio-testo)}
+
+.brand-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.brand-card{background:var(--bianco);border:1px solid #e6e6e6;padding:22px;display:flex;flex-direction:column}
+.brand-card .bc-head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:1px solid #f0f0f0;padding-bottom:12px;margin-bottom:12px}
+.brand-card h4{margin:0;font-size:15px;color:var(--grigio-scuro);text-transform:uppercase}
+.brand-card .bc-head .price{background:var(--grigio-scuro);color:var(--bianco);padding:3px 8px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.brand-card .bc-sub{font-size:10px;color:var(--grigio-testo);text-transform:uppercase;letter-spacing:.04em;margin-top:2px}
+.brand-card .bc-row{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:10px 0}
+.brand-card .bc-metric{font-size:11px}
+.brand-card .bc-metric .lbl{font-size:9px;text-transform:uppercase;color:#888;letter-spacing:.05em;display:block;margin-bottom:2px}
+.brand-card .bc-metric .val{font-weight:700;color:var(--grigio-scuro);font-size:14px}
+.brand-card .bc-metric .val.small{font-size:12px}
+.brand-card .bc-section{margin-top:10px;padding-top:10px;border-top:1px dashed #ececec;font-size:11px}
+.brand-card .bc-section .lbl{font-size:9px;text-transform:uppercase;color:#888;letter-spacing:.05em;font-weight:600;display:block;margin-bottom:4px}
+.brand-card .bc-section ul{margin:0}
+.brand-card .bc-section ul li{font-size:11px;padding-left:14px;margin-bottom:2px}
+.brand-card .bc-section ul li::before{width:4px;height:4px;top:6px}
+.brand-card .verified{color:var(--blu);font-size:9px;font-weight:700;margin-left:4px}
+
+.comment{background:var(--grigio-chiaro);padding:12px 16px;margin-bottom:8px;border-left:3px solid var(--grigio-grafico);font-size:11px}
+.comment.pos{border-left-color:var(--verde)}
+.comment.neg{border-left-color:var(--rosso)}
+.comment.mix{border-left-color:var(--arancione)}
+.comment .author{font-weight:700;color:var(--grigio-scuro);font-size:10px;text-transform:uppercase;letter-spacing:.04em}
+.comment .meta-c{font-size:10px;color:var(--grigio-testo);margin-left:8px}
+.comment .text{color:var(--grigio-testo);margin-top:4px;font-style:italic}
+.comment .text::before{content:"\201C"}
+.comment .text::after{content:"\201D"}
+
+.video-block{background:var(--bianco);border:1px solid #e6e6e6;padding:20px;margin-bottom:18px}
+.video-block .v-head{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:10px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #f0f0f0}
+.video-block .v-title{font-weight:700;color:var(--grigio-scuro);font-size:13px}
+.video-block .v-meta{font-size:11px;color:var(--grigio-testo)}
+.video-block .v-views{background:var(--grigio-scuro);color:var(--bianco);padding:3px 8px;font-size:10px;font-weight:600}
+
+.src-list{background:var(--grigio-chiaro);padding:24px;font-size:11px;column-count:2;column-gap:30px}
+.src-list .src{break-inside:avoid;margin-bottom:10px;padding-left:22px;position:relative}
+.src-list .src .n{position:absolute;left:0;top:0;color:var(--rosso);font-weight:700}
+.src-list .src .title{font-weight:600;color:var(--grigio-scuro);display:block}
+.src-list .src .domain{color:var(--grigio-testo);font-size:10px;text-transform:uppercase;letter-spacing:.04em}
+
+footer{background:var(--grigio-scuro);color:#cfcfcf;padding:40px 0;text-align:center;font-size:11px}
+footer img{height:32px;margin-bottom:18px;opacity:.95}
+footer p{color:#888;font-size:11px}
+
+@media(max-width:980px){
+  .grid-2,.grid-3,.grid-4,.toc-inner,.scoreboard,.glossary,.src-list,.brand-grid{grid-template-columns:1fr;column-count:1}
+  .hero-row{flex-direction:column}
+  .hero h1{font-size:30px}
+  h2{font-size:20px}
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-row">
+      <div class="hero-left">
+        <span class="kicker">Analisi competitiva, di mercato e social, v3</span>
+        <h1>Omoda Jaecoo Lepas Italia<br>2025, 2026</h1>
+        <p>Scenario auto Italia, posizionamento di Omoda 4, Jaecoo 7 e Lepas L4, benchmark dettagliato sui competitor di segmento, sentiment AI, social listening con commenti reali, presenza Instagram, TikTok, Facebook, footprint YouTube per ogni competitor, vendite per modello aprile e Q1 2026, search trend Google. Report consultabile online standalone, brandizzato Moca.</p>
+        <div class="meta">
+          <div><span>Periodo dati</span><strong>Maggio 2025, maggio 2026</strong></div>
+          <div><span>Brand cliente</span><strong>Omoda, Jaecoo, Lepas</strong></div>
+          <div><span>Competitor analizzati</span><strong>11 brand, 22 modelli, 4 canali social</strong></div>
+          <div><span>Fonti consultate</span><strong>40+ tra UNRAE, Quattroruote, Motor1, Newsauto, Reddit, Apify, DataForSEO, SEOZoom</strong></div>
+          <div><span>Versione</span><strong>v3, 21 maggio 2026</strong></div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="https://mocainteractive.com/assets/svg/logo-light.svg" alt="Moca Interactive">
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="toc">
+  <div class="wrap">
+    <div class="toc-inner">
+      <a href="#executive">01 Executive<small>Sintesi</small></a>
+      <a href="#glossario">02 Glossario<small>Sigle</small></a>
+      <a href="#mercato">03 Mercato Italia<small>UNRAE, cinesi</small></a>
+      <a href="#posizionamento">04 Posizionamento<small>Omoda Jaecoo Lepas</small></a>
+      <a href="#competitor">05 Matrice prezzi<small>Cluster A e B</small></a>
+      <a href="#sales">06 Vendite per modello<small>Aprile, Q1 2026</small></a>
+      <a href="#social">07 Schede competitor<small>IG, FB, TikTok, YT</small></a>
+      <a href="#trend">08 Trend ricerca<small>Google Trends</small></a>
+      <a href="#volumi">09 Volumi keyword<small>SEOZoom</small></a>
+      <a href="#commenti">10 Commenti reali<small>YouTube, forum</small></a>
+      <a href="#insight">11 Insight e azioni<small>Raccomandazioni</small></a>
+      <a href="#fonti">12 Fonti<small>Bibliografia</small></a>
+    </div>
+  </div>
+</nav>
+
+<section id="executive">
+  <div class="wrap">
+    <span class="section-tag">01 Executive summary</span>
+    <h2>Sintesi esecutiva</h2>
+    <p class="lead">Il mercato auto italiano nel primo quadrimestre 2026 ha immatricolato 641.772 vetture, in crescita del 10,1% rispetto allo stesso periodo del 2025 secondo i dati UNRAE<sup><a href="#s1">[1]</a></sup>. La quota delle auto cinesi e' passata dal 4,8% del 2024 all'8,4% del 2025 fino al 12,5% nei primi quattro mesi del 2026<sup><a href="#s2">[2]</a></sup>. In questo contesto, Omoda Jaecoo ha cumulato 12.848 immatricolazioni nei primi quattro mesi del 2026, con una crescita del +329% sullo stesso periodo dell'anno precedente<sup><a href="#s3">[3]</a></sup>. Lepas e' il nuovo brand del gruppo Chery in arrivo in Italia entro fine 2026, con la Lepas L4 quotata intorno ai 30.000 euro, posizionata in fascia premium accessibile<sup><a href="#s4">[4]</a></sup>.</p>
+
+    <div class="grid-4">
+      <div class="kpi">
+        <span class="label">Quota cinesi Italia, Q1 2026</span>
+        <div class="value">12,5%</div>
+        <span class="delta">+4,1 pt vs 2025 full year</span>
+        <small>78.000 immatricolazioni cinesi su 640.083 totali<sup><a href="#s2">[2]</a></sup>.</small>
+      </div>
+      <div class="kpi">
+        <span class="label">Crescita Omoda Jaecoo</span>
+        <div class="value">+329%</div>
+        <span class="delta">YoY primo quadrimestre 2026</span>
+        <small>12.848 immatricolazioni a fine aprile 2026, brand n. 4 cinese<sup><a href="#s3">[3]</a></sup>.</small>
+      </div>
+      <div class="kpi">
+        <span class="label">Audi Q3, leader Cluster B</span>
+        <div class="value">8.227</div>
+        <span class="delta">+74% YoY Q1 2026</span>
+        <small>Benchmark premium 30, 40k da battere<sup><a href="#s18">[18]</a></sup>.</small>
+      </div>
+      <div class="kpi">
+        <span class="label">Follower IG Omoda Jaecoo Italia</span>
+        <div class="value">26.225</div>
+        <span class="delta">vs BMW Italia 332k benchmark</span>
+        <small>13 volte meno del competitor premium leader<sup><a href="#s6">[6]</a></sup>.</small>
+      </div>
+    </div>
+
+    <div class="grid-2" style="margin-top:30px">
+      <div class="callout">
+        <h4>Cosa funziona oggi</h4>
+        <ul>
+          <li>La <strong>velocita di crescita</strong> di Omoda Jaecoo (+329% YoY) e' superiore a tutti i benchmark cinesi tranne Leapmotor (+2.925% nel 2025) e si accompagna a un prezzo medio piu alto, con marginalita potenziale migliore<sup><a href="#s3">[3]</a></sup>.</li>
+          <li><strong>L'editoria specializzata</strong> italiana (Motor1, Quattroruote, Automoto, NewsAuto, alVolante) produce contenuti dedicati con views da 100k a 577k per video, copertura organica gratuita<sup><a href="#s7">[7]</a></sup>.</li>
+          <li>La <strong>garanzia di 7 anni o 100.000 miglia</strong> e' riconosciuta come differenziatore dalle risposte degli assistenti AI e dai forum specializzati<sup><a href="#s5">[5]</a></sup>.</li>
+          <li>La <strong>Jaecoo 7 PHEV</strong> e' entrata in Top 10 delle ibride plug-in italiane ad aprile 2026 con 541 unita, vicino a BYD Seal U DM-i (6.205) come riferimento del segmento<sup><a href="#s3">[3]</a></sup>.</li>
+          <li>La <strong>community organica</strong> e' attiva, gruppo Facebook Jaecoo 7 Italia, thread lunghi su Quattroruote, discussioni su Reddit ItalyMotori<sup><a href="#s8">[8]</a></sup>.</li>
+        </ul>
+      </div>
+      <div class="callout dark">
+        <h4>Dove serve presidio</h4>
+        <ul>
+          <li>Il <strong>footprint Instagram Omoda Jaecoo Italia (26k)</strong> e' molto sotto la media del segmento premium (BMW 332k, Audi 395k) e della media mass market (Peugeot 104k, Dacia 50k, Renault 113k)<sup><a href="#s6">[6]</a></sup>.</li>
+          <li><strong>Sentiment Jaecoo 7 polarizzato</strong>, video critici da 500k+ views tematizzano consumi reali, svalutazione, profilo finanziario di chi acquista<sup><a href="#s7">[7]</a></sup>.</li>
+          <li><strong>MG e BYD percepiti come piu solidi</strong> dalle risposte AI grazie a rete consolidata e reputazione tecnologica, BYD spicca per credibilita industriale internazionale<sup><a href="#s5">[5]</a></sup>.</li>
+          <li><strong>Lepas L4</strong> ha awareness organica praticamente nulla a maggio 2026, volume Google misurato a zero<sup><a href="#s9">[9]</a></sup>.</li>
+          <li><strong>Account IG Omoda Jaecoo non verificato</strong>, mentre BYD Italia, BMW Italia, Peugeot Italia, MG Motor Italia, Audi Italia, Renault Italia, Dacia Italia sono tutti verificati<sup><a href="#s6">[6]</a></sup>.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="glossario">
+  <div class="wrap">
+    <span class="section-tag">02 Glossario</span>
+    <h2>Sigle e termini, riferimento veloce</h2>
+    <p>Glossario tecnico utile per leggere correttamente i dati e i grafici di questo report. Categorie: motorizzazione, SEO e search, social e marketing, fonti istituzionali.</p>
+
+    <h3>Motorizzazione</h3>
+    <div class="glossary">
+      <div class="gloss-item"><span class="term">BEV, Battery Electric Vehicle</span><span class="def">Auto 100% elettrica, alimentata solo da batteria. Esempi nel report: Leapmotor T03 e C10, BMW iX1, Volvo C40 EX40, BYD Atto 3.</span></div>
+      <div class="gloss-item"><span class="term">PHEV, Plug-in Hybrid Electric Vehicle</span><span class="def">Ibrida ricaricabile dalla presa, autonomia elettrica indicativa 40, 100 km piu motore termico. Esempi: Jaecoo 7 plug-in, BYD Seal U DM-i, Audi Q3 e-hybrid.</span></div>
+      <div class="gloss-item"><span class="term">HEV o FHEV, Full Hybrid</span><span class="def">Ibrida classica che si auto-ricarica in marcia, non si attacca alla presa. Esempi: Omoda 4 full hybrid 204 CV, MG ZS Hybrid+, Cupra Formentor 1.5 hybrid.</span></div>
+      <div class="gloss-item"><span class="term">MHEV, Mild Hybrid</span><span class="def">Ibrida leggera a 48 volt, recupera energia ma non muove l auto in solo elettrico. Esempi: Mazda CX-30, Audi Q3 TFSI MHEV.</span></div>
+      <div class="gloss-item"><span class="term">SHS, Super Hybrid System</span><span class="def">Sistema ibrido proprietario Omoda Jaecoo. SHS-H e' la versione full hybrid 224 CV, posizionata come evoluzione del PHEV.</span></div>
+      <div class="gloss-item"><span class="term">NEV, New Energy Vehicle</span><span class="def">Termine cinese che raggruppa BEV e PHEV, usato dagli OEM cinesi (es. Omoda Jaecoo nei materiali brand).</span></div>
+      <div class="gloss-item"><span class="term">DM-i, Dual Mode intelligent</span><span class="def">Sistema ibrido proprietario BYD presente su Seal U DM-i e Atto 2 DM-i, base del successo PHEV.</span></div>
+      <div class="gloss-item"><span class="term">e-POWER</span><span class="def">Sistema full hybrid proprietario Nissan dove il motore termico genera elettricita per alimentare il motore elettrico che muove sempre le ruote. Sulla Qashqai 2026.</span></div>
+      <div class="gloss-item"><span class="term">B-SUV, C-SUV</span><span class="def">Classificazione europea SUV per segmento. B-SUV ~4,2 m (Avenger, Juke, 2008), C-SUV ~4,4 m, 4,6 m (Qashqai, Tucson, Omoda 5, Jaecoo 7, Audi Q3).</span></div>
+      <div class="gloss-item"><span class="term">eSkyactiv G</span><span class="def">Motore mild hybrid Mazda 2.0 e 2.5 a benzina aspirato, contrarian al downsizing turbo. Sulla CX-30.</span></div>
+    </div>
+
+    <h3>SEO, search e marketing</h3>
+    <div class="glossary">
+      <div class="gloss-item"><span class="term">KD, Keyword Difficulty</span><span class="def">Difficolta stimata di posizionarsi nei risultati organici di Google. Scala 0-100, piu alto = piu difficile.</span></div>
+      <div class="gloss-item"><span class="term">CPC, Cost Per Click</span><span class="def">Costo medio per click su Google Ads per una keyword. Indica concorrenza commerciale.</span></div>
+      <div class="gloss-item"><span class="term">SERP, Search Engine Results Page</span><span class="def">Pagina dei risultati di Google. Una keyword puo mostrare AI Overview, video, news, immagini, mappe.</span></div>
+      <div class="gloss-item"><span class="term">AI Overview</span><span class="def">Risposta sintetica generata da Google AI in cima alla SERP. Sottrae click ai risultati organici.</span></div>
+      <div class="gloss-item"><span class="term">Intent</span><span class="def">Intento di ricerca: informazionale, navigational, transazionale, commercial.</span></div>
+      <div class="gloss-item"><span class="term">YoY, Year over Year</span><span class="def">Variazione percentuale anno su anno.</span></div>
+      <div class="gloss-item"><span class="term">Q1, Q4</span><span class="def">Trimestre: Q1 gennaio marzo, Q2 aprile giugno, Q3 luglio settembre, Q4 ottobre dicembre.</span></div>
+      <div class="gloss-item"><span class="term">SoV, Share of Voice</span><span class="def">Quota di voce, percentuale di menzioni del brand rispetto al cluster competitivo.</span></div>
+      <div class="gloss-item"><span class="term">CTA, Call To Action</span><span class="def">Pulsante o testo che spinge all azione (Get quote, Scopri di piu, Configura).</span></div>
+      <div class="gloss-item"><span class="term">LLM, Large Language Model</span><span class="def">Modello linguistico AI alla base di ChatGPT, Perplexity, Claude, Gemini.</span></div>
+    </div>
+
+    <h3>Fonti istituzionali</h3>
+    <div class="glossary">
+      <div class="gloss-item"><span class="term">UNRAE</span><span class="def">Unione Nazionale Rappresentanti Autoveicoli Esteri, pubblica i dati ufficiali immatricolazioni Italia mensili.</span></div>
+      <div class="gloss-item"><span class="term">ANFIA</span><span class="def">Associazione Nazionale Filiera Industria Automobilistica, fonte ufficiale italiana del settore.</span></div>
+      <div class="gloss-item"><span class="term">ANCAP</span><span class="def">Australasian New Car Assessment Program, ente test sicurezza auto. Citato per Jaecoo J7 SHS 5 stelle.</span></div>
+      <div class="gloss-item"><span class="term">Euro NCAP</span><span class="def">Equivalente europeo di ANCAP, test sicurezza auto. Riferimento per Cluster B premium.</span></div>
+      <div class="gloss-item"><span class="term">Meta Ads Library</span><span class="def">Archivio pubblico inserzioni Facebook e Instagram, gestito da Meta.</span></div>
+      <div class="gloss-item"><span class="term">DataForSEO</span><span class="def">Provider di API per dati SEO, SERP, AI, social. Usato per Google Trends, AI LLM responses, YouTube SERP e commenti.</span></div>
+      <div class="gloss-item"><span class="term">Apify</span><span class="def">Piattaforma di scraping con catalogo di scraper. Usata per Instagram, Facebook Ads Library, forum.</span></div>
+      <div class="gloss-item"><span class="term">SEOZoom</span><span class="def">Tool SEO italiano, fonte primaria per volumi di ricerca Google IT, CPC, KD.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="mercato">
+  <div class="wrap">
+    <span class="section-tag">03 Scenario mercato</span>
+    <h2>Auto in Italia, scenario aggiornato</h2>
+    <p class="lead">Il mercato italiano dell auto a maggio 2026 e' in ripresa solida ma con segnali di rallentamento sul finale d anno previsti per i dazi USA, l incertezza sui mandati elettrici 2035 e il fisco aziendale fermo. Le auto cinesi sono il fenomeno strutturale del biennio.</p>
+
+    <div class="grid-4">
+      <div class="kpi"><span class="label">Aprile 2026</span><div class="value">155.210</div><span class="delta">+11,6% YoY</span><small>Immatricolazioni mensili Italia<sup><a href="#s1">[1]</a></sup>.</small></div>
+      <div class="kpi"><span class="label">Quadrimestre 2026</span><div class="value">641.772</div><span class="delta">+10,1% YoY</span><small>Cumulato gennaio aprile<sup><a href="#s1">[1]</a></sup>.</small></div>
+      <div class="kpi"><span class="label">Elettriche aprile 2026</span><div class="value">+98,6%</div><span class="delta">YoY, traino incentivi</span><small>Driver primario crescita BEV<sup><a href="#s1">[1]</a></sup>.</small></div>
+      <div class="kpi"><span class="label">Cinesi 2025 full year</span><div class="value">128.600</div><span class="delta">8,4% del mercato</span><small>Da 4,8% del 2024, quasi raddoppiata<sup><a href="#s11">[11]</a></sup>.</small></div>
+    </div>
+
+    <div class="grid-2" style="margin-top:24px">
+      <div class="chart-box">
+        <h4>Brand cinesi 2025, immatricolazioni e ranking</h4>
+        <div class="chart-wrapper"><canvas id="chBrand2025"></canvas></div>
+        <p class="source">Fonte: UNRAE, Automoto.it, Triesteallnews, gennaio 2026<sup><a href="#s11">[11]</a></sup>.</p>
+      </div>
+      <div class="chart-box">
+        <h4>Brand cinesi Q1 e aprile 2026, immatricolazioni 4 mesi</h4>
+        <div class="chart-wrapper"><canvas id="chBrand2026"></canvas></div>
+        <p class="source">Fonte: UNRAE, Quotidiano Motori, maggio 2026<sup><a href="#s2">[2]</a></sup>.</p>
+      </div>
+    </div>
+
+    <h3>Contesto competitivo per fascia di prezzo</h3>
+    <p>La domanda italiana del 2026 si concentra sul segmento B (45% del totale tra berline e SUV) e sul segmento C-SUV, con prezzo medio reale 22.000, 32.000 euro per le motorizzazioni mainstream<sup><a href="#s12">[12]</a></sup>. Le offerte cinesi attaccano il segmento intermedio con prezzi pari al 60, 80% delle alternative europee, garanzie estese (6, 7 anni) e dotazione tecnologica superiore alla media di categoria<sup><a href="#s5">[5]</a></sup>. Il segmento premium 30.000, 40.000 euro (Cluster B) resta presidiato dai tedeschi (BMW iX1, Audi Q3) e dallo scandinavo Volvo XC40, ma Jaecoo 7 sta entrando con un prezzo medio 25.000, 40.000 a seconda della versione.</p>
+
+    <h3>Outlook 2026</h3>
+    <ul>
+      <li><strong>Stime tagliate sul 2026</strong> per effetto dei dazi USA, fisco aziendale fermo, incertezza sui mandati elettrici 2035<sup><a href="#s13">[13]</a></sup>.</li>
+      <li><strong>Penetrazione cinese stimata a fine 2026</strong> oltre le 200.000 unita, quota 13, 14% se prosegue il ritmo attuale<sup><a href="#s2">[2]</a></sup>.</li>
+      <li><strong>Leapmotor T03 fenomeno</strong>, 4.090 unita ad aprile 2026, terza auto piu venduta in Italia, 29% del mercato BEV nazionale<sup><a href="#s2">[2]</a></sup>.</li>
+      <li><strong>BYD Seal U DM-i (6.205) e Atto 2 DM-i (5.774)</strong> trainano BYD oltre 17.000 immatricolazioni nei 4 mesi, leadership PHEV cinese<sup><a href="#s2">[2]</a></sup>.</li>
+      <li><strong>Audi Q3 leader Cluster B</strong> con 8.227 unita Q1 2026 in crescita +74%, oltre 115.000 unita storiche in Italia<sup><a href="#s18">[18]</a></sup>.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="posizionamento">
+  <div class="wrap">
+    <span class="section-tag">04 Posizionamento brand</span>
+    <h2>Come si percepiscono Omoda, Jaecoo, Lepas</h2>
+    <p class="lead">Percezione ricostruita combinando tre input. Primo, risposte degli assistenti AI ChatGPT 4.1 mini e Perplexity Sonar a query di acquisto in italiano. Secondo, copertura organica di YouTube su query come <em>omoda 4 recensione</em>. Terzo, conversazione spontanea su Reddit, forum Quattroruote, gruppi Facebook.</p>
+
+    <h3>Ranking dei brand cinesi nel mindset italiano 2026</h3>
+    <div class="scoreboard">
+      <div class="score"><span class="pos">1</span><div class="brand-name">MG</div><div class="tag">Equilibrio, rete, fiducia</div></div>
+      <div class="score"><span class="pos">2</span><div class="brand-name">BYD</div><div class="tag">Tecnologia, reputazione</div></div>
+      <div class="score"><span class="pos">3</span><div class="brand-name">Leapmotor</div><div class="tag">Prezzo aggressivo, T03</div></div>
+      <div class="score"><span class="pos">4</span><div class="brand-name">Omoda</div><div class="tag">Design, dotazione</div></div>
+      <div class="score"><span class="pos">5</span><div class="brand-name">Jaecoo</div><div class="tag">SUV robusto, in costruzione</div></div>
+    </div>
+    <p class="source" style="text-align:center;font-size:10px;color:#888;font-style:italic">Fonte: sintesi DataForSEO AI Optimization, query in italiano sui due assistenti AI, maggio 2026<sup><a href="#s5">[5]</a></sup>.</p>
+
+    <div class="grid-3" style="margin-top:24px">
+      <div class="card">
+        <span class="price">Omoda 4, lancio fine 2026, ~20k</span>
+        <h3>Omoda 4</h3>
+        <p>Crossover compatta 4,4 metri full hybrid 1.5 da 204 cavalli, narrativa dominante <em>Lamborghini a 20.000 euro</em>.</p>
+        <p><strong>Volume Google maggio 2026:</strong> 70 medio mensile, picco 480 a ottobre 2025<sup><a href="#s9">[9]</a></sup>.</p>
+        <p><strong>YouTube footprint:</strong> Motor1 143k, Quattroruote 96k, Automoto 265k<sup><a href="#s14">[14]</a></sup>.</p>
+        <p><strong>Sentiment commenti:</strong> 80% positivo, narrativa di rottura del modello europeo.</p>
+        <span class="pill green">Design</span><span class="pill blue">Garanzia 7 anni</span><span class="pill orange">Awareness in costruzione</span>
+      </div>
+      <div class="card">
+        <span class="price">Jaecoo 7, listino 25, 40k</span>
+        <h3>Jaecoo 7</h3>
+        <p>SUV C 4,5 metri, gamma benzina, PHEV e dal 2026 full hybrid SHS-H 224 CV. <strong>Top 10 ibride plug-in italiane ad aprile 2026</strong> con 541 unita.</p>
+        <p><strong>Volume Google:</strong> 1.900 medio mensile, picchi 3.600 marzo-aprile 2026<sup><a href="#s9">[9]</a></sup>.</p>
+        <p><strong>YouTube footprint:</strong> Motor1 233k, RecensioneSmart 577k critico, TechDrive 391k positivo<sup><a href="#s14">[14]</a></sup>.</p>
+        <p><strong>Sentiment commenti:</strong> polarizzato su consumi, svalutazione, ricambistica.</p>
+        <span class="pill green">Hybrid SHS-H</span><span class="pill red">Sentiment misto</span><span class="pill blue">Press coverage tier 1</span>
+      </div>
+      <div class="card">
+        <span class="price">Lepas L4, lancio fine 2026, ~30k</span>
+        <h3>Lepas L4</h3>
+        <p>Crossover 4,4 metri su piattaforma LEX, full hybrid e PHEV. Terzo brand del gruppo Chery in Italia.</p>
+        <p><strong>Volume Google:</strong> praticamente zero a maggio 2026<sup><a href="#s9">[9]</a></sup>.</p>
+        <p><strong>Awareness organica:</strong> solo articoli tecnici Quattroruote, alvolante, Quotidiano Motori, MotorBox<sup><a href="#s4">[4]</a></sup>.</p>
+        <p><strong>Cluster competitor dal brief:</strong> Volvo XC40 e C40, BMW iX1, Audi Q3.</p>
+        <span class="pill red">Awareness zero</span><span class="pill orange">Positioning da definire</span>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top:24px">
+      <h4>Sentiment AI esteso</h4>
+      <p><strong>ChatGPT 4.1 mini</strong> riconosce per Omoda e Jaecoo la garanzia 7 anni o 100.000 miglia e la rete di 40 concessionarie in Italia. Per MG ZS segnala criticita di affidabilita su modelli precedenti (MG4 ed ex MG ZS EV). Per Leapmotor, rete in crescita ma sottile<sup><a href="#s5">[5]</a></sup>.</p>
+      <p><strong>Perplexity Sonar</strong> classifica i cinesi in Italia 2026: MG (equilibrio e fiducia), BYD (tecnologia e credibilita), Leapmotor (prezzo e T03), Omoda (design e dotazione), Jaecoo (SUV robusto). Top 10 modelli cinesi: Leapmotor T03, MG ZS, MG3, BYD Seal U, BYD Atto 2, Omoda 5, MG HS, Jaecoo 7, BYD Dolphin Surf, Omoda 9<sup><a href="#s5">[5]</a></sup>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="competitor">
+  <div class="wrap">
+    <span class="section-tag">05 Matrice prezzi</span>
+    <h2>Cluster di competizione</h2>
+    <p class="lead">Allineato al brief originale, due cluster di prezzo. Cluster A 20.000, 25.000 euro per Omoda 4. Cluster B 30.000, 40.000 euro per Jaecoo 7 e Lepas L4. Le tabelle includono volumi di ricerca SEOZoom, KD e positioning sintetico.</p>
+
+    <div class="cluster-head"><h3>Cluster A, Omoda 4, fascia 20, 25k</h3><span class="price-range">Mass market, B SUV e C SUV compatti</span></div>
+    <p>Competitor del brief: BYD (Atto 3, Seal U DM-i), MG (ZS, HS, 3), Leapmotor (T03, C10), Cupra (Formentor), Mazda (CX-30), Nissan (Juke, Qashqai), Peugeot (2008, 3008).</p>
+    <table>
+      <thead><tr><th>Modello</th><th>Brand</th><th class="right">Volume Google IT</th><th class="right">KD</th><th>Positioning</th></tr></thead>
+      <tbody>
+        <tr><td class="brand">Omoda 4</td><td>Omoda, Cina, Chery</td><td class="right">70, peak 480</td><td class="right">56</td><td>Lancio fine 2026, full hybrid 204 CV, narrativa premium accessibile</td></tr>
+        <tr><td class="brand">Cupra Formentor</td><td>Cupra, Spagna, VW</td><td class="right">135.000</td><td class="right">56</td><td>Crossover sportivo, gamma TSI, eTSI, PHEV</td></tr>
+        <tr><td class="brand">Nissan Juke</td><td>Nissan, Giappone</td><td class="right">74.000</td><td class="right">61</td><td>B SUV ibrido e e-Power, dominio europeo</td></tr>
+        <tr><td class="brand">Nissan Qashqai</td><td>Nissan, Giappone</td><td class="right">110.000</td><td class="right">68</td><td>C SUV leader segmento, e-Power 5-in-1</td></tr>
+        <tr><td class="brand">Peugeot 2008</td><td>Peugeot, Stellantis</td><td class="right">201.000</td><td class="right">73</td><td>B SUV leader Italia 2025, gamma benzina, PureTech, ibrida, BEV</td></tr>
+        <tr><td class="brand">Peugeot 3008</td><td>Peugeot, Stellantis</td><td class="right">135.000</td><td class="right">73</td><td>C SUV ibrido e elettrico, piattaforma STLA Medium</td></tr>
+        <tr><td class="brand">MG ZS</td><td>MG, Cina, SAIC</td><td class="right">27.100</td><td class="right">55</td><td>Best seller cinese 2025, ottima leva prezzo</td></tr>
+        <tr><td class="brand">MG HS</td><td>MG, Cina, SAIC</td><td class="right">33.100</td><td class="right">68</td><td>C SUV, gamma PHEV competitiva</td></tr>
+        <tr><td class="brand">BYD Atto 3</td><td>BYD, Cina</td><td class="right">27.100</td><td class="right">72</td><td>C SUV BEV, batteria Blade come leva</td></tr>
+        <tr><td class="brand">BYD Seal U DM-i</td><td>BYD, Cina</td><td class="right">8.100</td><td class="right">71</td><td>PHEV leader cinese Q1 2026, 6.205 unita</td></tr>
+        <tr><td class="brand">Leapmotor T03</td><td>Leapmotor, Stellantis</td><td class="right">12.100</td><td class="right">54</td><td>Mini BEV urbana, 3 piu venduta Italia, 29% mercato BEV</td></tr>
+        <tr><td class="brand">Leapmotor C10</td><td>Leapmotor, Stellantis</td><td class="right">6.600</td><td class="right">44</td><td>SUV BEV, partnership Stellantis</td></tr>
+        <tr><td class="brand">Mazda CX-30</td><td>Mazda, Giappone</td><td class="right">non rilev.</td><td class="right">-</td><td>C SUV mild hybrid 2.5 eSkyactiv G 140 CV</td></tr>
+      </tbody>
+    </table>
+    <p class="source">Fonti: SEOZoom IT volumi e KD<sup><a href="#s9">[9]</a></sup>, UNRAE immatricolazioni<sup><a href="#s2">[2]</a></sup>, sintesi nostra positioning.</p>
+
+    <div class="cluster-head"><h3>Cluster B, Jaecoo 7 e Lepas L4, fascia 30, 40k</h3><span class="price-range">C SUV premium accessibile vs tedeschi e scandinava</span></div>
+    <p>Cluster definito dal brief originale. Jaecoo 7 attualmente in gamma e Lepas L4 in arrivo fine 2026 sfidano i benchmark premium del segmento C SUV ibrido, plug-in e elettrico: Volvo XC40 e C40, BMW iX1, Audi Q3. Il thread piu lungo del forum Quattroruote in indecisione conferma esattamente questo benchmark mentale del consumatore italiano<sup><a href="#s10">[10]</a></sup>.</p>
+    <table>
+      <thead><tr><th>Modello</th><th>Brand</th><th class="right">Volume Google IT</th><th class="right">KD</th><th>Positioning</th></tr></thead>
+      <tbody>
+        <tr><td class="brand">Jaecoo 7</td><td>Jaecoo, Cina, Chery</td><td class="right">1.900, peak 3.600</td><td class="right">57</td><td>SUV C 4,5 m, gamma benzina, PHEV, SHS-H 224 CV. Top 10 PHEV aprile 2026</td></tr>
+        <tr><td class="brand">Lepas L4</td><td>Lepas, Cina, Chery</td><td class="right">~0</td><td class="right">-</td><td>Crossover 4,4 m, full hybrid e PHEV, lancio fine 2026</td></tr>
+        <tr><td class="brand">Volvo XC40 e C40</td><td>Volvo, Svezia, Geely</td><td class="right">590</td><td class="right">57</td><td>C SUV premium scandinavo, gamma mild hybrid, PHEV, EX40 elettrica</td></tr>
+        <tr><td class="brand">BMW iX1</td><td>BMW, Germania</td><td class="right">9.900, peak 27.100 in ottobre</td><td class="right">66</td><td>C SUV BEV premium tedesco, rete capillare, brand equity fortissima</td></tr>
+        <tr><td class="brand">Audi Q3</td><td>Audi, Germania, VW</td><td class="right">110.000</td><td class="right">62</td><td>C SUV premium leader segmento, rinnovato 2024, gamma TFSI, TDI, e-hybrid</td></tr>
+      </tbody>
+    </table>
+    <p class="source">Fonti: SEOZoom IT<sup><a href="#s9">[9]</a></sup>, forum Quattroruote<sup><a href="#s10">[10]</a></sup>.</p>
+  </div>
+</section>
+
+<section id="sales">
+  <div class="wrap">
+    <span class="section-tag">06 Vendite per modello</span>
+    <h2>Immatricolazioni puntuali per modello, aprile e Q1 2026</h2>
+    <p class="lead">Numeri ufficiali UNRAE per i modelli del brief con relativi competitor diretti. Quando il dato puntuale del modello non e' pubblicato, riportiamo il dato del brand. Ordinati per immatricolazioni decrescenti.</p>
+
+    <table>
+      <thead>
+        <tr><th>Modello</th><th>Cluster</th><th class="right">Aprile 2026</th><th class="right">Q1 2026</th><th class="right">Crescita YoY</th><th>Note</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="brand">Toyota Aygo X</td><td>fuori cluster</td><td class="right">13.061</td><td class="right">-</td><td class="right" style="color:var(--verde)">+78%</td><td>Riferimento di mercato per A-SUV</td></tr>
+        <tr><td class="brand">Renault Clio</td><td>fuori cluster</td><td class="right">12.163</td><td class="right">-</td><td class="right" style="color:var(--verde)">+21%</td><td>Riferimento del segmento B</td></tr>
+        <tr><td class="brand">Nissan Qashqai</td><td>Cluster A</td><td class="right">-</td><td class="right">9.363</td><td class="right" style="color:var(--verde)">+19%</td><td>Leadership C-SUV Italia</td></tr>
+        <tr><td class="brand">Dacia Duster</td><td>fuori cluster</td><td class="right">-</td><td class="right">8.572</td><td class="right">-</td><td>Top 10 modelli Italia Q1 2026</td></tr>
+        <tr><td class="brand">Audi Q3</td><td>Cluster B</td><td class="right">491 (PHEV)</td><td class="right">8.227</td><td class="right" style="color:var(--verde)">+74%</td><td>Leader Cluster B, gamma piu venduta</td></tr>
+        <tr><td class="brand">BYD Seal U DM-i</td><td>Cluster A</td><td class="right">6.205</td><td class="right">-</td><td class="right" style="color:var(--verde)">+52%</td><td>Leader PHEV cinese Italia</td></tr>
+        <tr><td class="brand">Omoda 5</td><td>brand cliente</td><td class="right">-</td><td class="right">5.000+</td><td class="right">-</td><td>Modello trainante Omoda Jaecoo</td></tr>
+        <tr><td class="brand">Suzuki Swift</td><td>fuori cluster</td><td class="right">5.085</td><td class="right">-</td><td class="right" style="color:var(--verde)">+37%</td><td>Riferimento city car</td></tr>
+        <tr><td class="brand">Jaecoo 7 (totale Jaecoo)</td><td>brand cliente</td><td class="right">1.713</td><td class="right">4.653</td><td class="right" style="color:var(--verde)">+329%</td><td>Cumulato Jaecoo 4 mesi, Omoda Jaecoo +329%</td></tr>
+        <tr><td class="brand">Leapmotor T03</td><td>Cluster A</td><td class="right">4.090</td><td class="right">-</td><td class="right">-</td><td>3 modello piu venduto Italia, 29% BEV</td></tr>
+        <tr><td class="brand">Ford Puma</td><td>fuori cluster</td><td class="right">2.358</td><td class="right">-</td><td class="right">-</td><td>B-SUV mass market</td></tr>
+        <tr><td class="brand">Peugeot 2008</td><td>Cluster A</td><td class="right">1.738</td><td class="right">-</td><td class="right">-</td><td>B-SUV leader storico</td></tr>
+        <tr><td class="brand">BMW X1 PHEV</td><td>Cluster B</td><td class="right">650</td><td class="right">-</td><td class="right">-</td><td>Variante PHEV del Cluster B</td></tr>
+        <tr><td class="brand">Jaecoo 7 PHEV</td><td>brand cliente</td><td class="right">541</td><td class="right">-</td><td class="right">-</td><td>Top 10 PHEV Italia, +210% Jan-Feb</td></tr>
+      </tbody>
+    </table>
+
+    <div class="grid-3" style="margin-top:24px">
+      <div class="kpi">
+        <span class="label">Omoda Jaecoo cumulato</span>
+        <div class="value">12.848</div>
+        <span class="delta">4 mesi 2026, +329% YoY</span>
+        <small>n. 4 brand cinese, dietro MG, BYD, Leapmotor.</small>
+      </div>
+      <div class="kpi">
+        <span class="label">BYD Seal U vs Jaecoo 7</span>
+        <div class="value">11x</div>
+        <span class="delta neg">BYD vendendo 11 volte tanto su PHEV</span>
+        <small>6.205 BYD vs 541 Jaecoo 7 PHEV ad aprile.</small>
+      </div>
+      <div class="kpi">
+        <span class="label">Audi Q3 vs Jaecoo 7</span>
+        <div class="value">5x</div>
+        <span class="delta neg">Audi Q3 5 volte Jaecoo nel Cluster B</span>
+        <small>8.227 Audi Q3 Q1 vs ~1.700 Jaecoo equiv.</small>
+      </div>
+    </div>
+
+    <p class="source">Fonti: UNRAE, Newsauto, Motor1 Italia, Virgilio, Quattroruote, raccolta 21 mag 2026<sup><a href="#s1">[1]</a></sup><sup><a href="#s2">[2]</a></sup><sup><a href="#s18">[18]</a></sup><sup><a href="#s19">[19]</a></sup>.</p>
+  </div>
+</section>
+
+<section id="social">
+  <div class="wrap">
+    <span class="section-tag">07 Schede competitor</span>
+    <h2>Schede social complete per ogni competitor</h2>
+    <p class="lead">Per ogni competitor del Cluster A e B, una scheda con dati Instagram, Facebook, TikTok, YouTube top video. Dati raccolti tramite Apify (IG), DataForSEO (YouTube SERP IT), Meta Ads Library (FB), web search (TikTok). Quando un canale non e' attivo o non raggiunto in questa demo, lo segnaliamo esplicitamente.</p>
+
+    <div class="cluster-head"><h3>Brand cliente, Omoda Jaecoo Italia</h3><span class="price-range">Riferimento di confronto</span></div>
+    <div class="brand-grid">
+      <div class="brand-card">
+        <div class="bc-head">
+          <div>
+            <h4>Omoda Jaecoo Italia</h4>
+            <div class="bc-sub">Cina, gruppo Chery</div>
+          </div>
+          <div class="price">Brand cliente</div>
+        </div>
+        <div class="bc-row">
+          <div class="bc-metric"><span class="lbl">Vendite Q1+aprile 2026</span><span class="val">12.848</span></div>
+          <div class="bc-metric"><span class="lbl">Crescita YoY</span><span class="val" style="color:var(--verde)">+329%</span></div>
+        </div>
+        <div class="bc-section">
+          <span class="lbl">Instagram, @omodajaecoo.italia</span>
+          <ul><li><strong>26.225 follower</strong>, 1.099 post, non verificato</li><li>Bio: Benvenuti nell era Super Hybrid, #FutureOfTechnology</li></ul>
+        </div>
+        <div class="bc-section">
+          <span class="lbl">Facebook, Meta Ads Library</span>
+          <ul><li>Pagina IT: <strong>125.344 like</strong>, CTA <em>Get quote</em></li><li>Pagina Global: 1.063.906 like, ANCAP 5-star asset</li><li>Gruppo spontaneo Jaecoo 7 Italia attivo</li></ul>
+        </div>
+        <div class="bc-section">
+          <span class="lbl">TikTok</span>
+          <ul><li>Handle ufficiale: <strong>@omodajaecoo.italia</strong></li><li>Follower count non raccolto in demo (richiede scraper paid)</li></ul>
+        </div>
+        <div class="bc-section">
+          <span class="lbl">YouTube, top video italiani</span>
+          <ul><li>RecensioneSmart, Jaecoo 7 pente, <strong>577.818 views, sentiment negativo</strong></li><li>What Car, Jaecoo 7 peggiore, 517.728 views, UK indicizzato IT</li><li>TechDrive, Jaecoo 7 PHEV positivo, 391.820 views</li><li>Automoto, Omoda 4 SUV 4,4m, 265.076 views</li><li>Motor1, Jaecoo 7 perche si no, 233.674 views</li></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="cluster-head"><h3>Cluster A, competitor Omoda 4, fascia 20, 25k</h3><span class="price-range">7 competitor: BYD, MG, Leapmotor, Cupra, Mazda, Nissan, Peugeot</span></div>
+    <div class="brand-grid">
+
+      <div class="brand-card">
+        <div class="bc-head"><div><h4>BYD Italia</h4><div class="bc-sub">Cina</div></div><div class="price">Cluster A</div></div>
+        <div class="bc-row">
+          <div class="bc-metric"><span class="lbl">Vendite 4 mesi 2026</span><span class="val">17.479</span></div>
+          <div class="bc-metric"><span class="lbl">Crescita YoY</span><span class="val" style="color:var(--verde)">+208%</span></div>
+        </div>
+        <div class="bc-section"><span class="lbl">Instagram, @byd.italy<span class="verified">VERIFICATO</span></span><ul><li><strong>48.236 follower</strong>, 604 post</li><li>Bio: Build Your Dreams, oppure guidali</li></ul></div>
+        <div class="bc-section"><span class="lbl">YouTube top video Seal U</span><ul><li>We Drive, test drive Seal U, <strong>810.878 views</strong></li><li>Motor1, Seal U ibrida perche si, 360.633 views</li><li>D Rossi Automotive, Seal U DM-i, 274.081 views</li><li>Automoto, Seal U DM-i AWD, 121.923 views</li></ul></div>
+        <div class="bc-section"><span class="lbl">Modelli top</span><ul><li>Seal U DM-i 6.205 unita aprile, leader PHEV</li><li>Atto 2 DM-i 5.774 unita 4 mesi</li><li>Atto 3 BEV, Dolphin Surf</li></ul></div>
+      </div>
+
+      <div class="brand-card">
+        <div class="bc-head"><div><h4>MG Motor Italia</h4><div class="bc-sub">Cina, gruppo SAIC</div></div><div class="price">Cluster A</div></div>
+        <div class="bc-row">
+          <div class="bc-metric"><span class="lbl">Vendite 4 mesi 2026</span><span class="val">21.500</span></div>
+          <div class="bc-metric"><span class="lbl">Posizione brand</span><span class="val">11</span></div>
+        </div>
+        <div class="bc-section"><span class="lbl">Instagram, @mgmotoritalia<span class="verified">VERIFICATO</span></span><ul><li><strong>17.682 follower</strong>, 127 post</li><li>Bio: MG Motor, la nuova generazione di auto e qui</li></ul></div>
+        <div class="bc-section"><span class="lbl">TikTok</span><ul><li>EU account: <strong>@mgmotoreurope</strong></li><li>UK reference: @mgcarsuk</li></ul></div>
+        <div class="bc-section"><span class="lbl">YouTube top video MG ZS</span><ul><li>D Rossi Automotive, ZS segreti, <strong>344.992 views</strong></li><li>Motor1, ZS Hybrid perche si, 246.821 views</li><li>Automoto, ZS Hybrid+ 23.500 euro, 161.591 views</li><li>TechDrive, ZS Hybrid PRO CONTRO, 148.807 views</li><li>RecensioneSmart, ZS Hybrid+ vs europee, 142.014 views</li></ul></div>
+      </div>
+
+      <div class="brand-card">
+        <div class="bc-head"><div><h4>Leapmotor Italia</h4><div class="bc-sub">Cina, partnership Stellantis</div></div><div class="price">Cluster A</div></div>
+        <div class="bc-row">
+          <div class="bc-metric"><span class="lbl">Vendite 4 mesi 2026</span><span class="val">16.135</span></div>
+          <div class="bc-metric"><span class="lbl">T03 ad aprile</span><span class="val">4.090</span></div>
+        </div>
+        <div class="bc-section"><span class="lbl">Instagram, @leapmotor_italia</span><ul><li><strong>11.181 follower</strong>, 86 post, non verificato</li><li>Bio: La mobilita elettrica, pensata per tutti</li><li><strong>Anomalia:</strong> n. 3 cinese per vendite ma social embrionale</li></ul></div>
+        <div class="bc-section"><span class="lbl">YouTube top video T03</span><ul><li>TechDrive, T03 proprietario PRO CONTRO, <strong>558.756 views</strong></li><li>Automoto, T03 quasi 300km a 17.900 euro, 164.273 views</li><li>Elettronauti, T03 in Italia 15.500 euro, 111.299 views</li><li>Quattroruote, T03 vs Dacia Spring, 107.618 views</li><li>Quattroruote, T03 395km prezzo pazzesco, 105.631 views</li></ul></div>
+        <div class="bc-section"><span class="lbl">Asset cliente</span><ul><li>T03 e' la 3 auto piu venduta in Italia ad aprile</li><li>29% del mercato BEV italiano</li></ul></div>
+      </div>
+
+      <div class="brand-card">
+        <div class="bc-head"><div><h4>Cupra</h4><div class="bc-sub">Spagna, gruppo Volkswagen</div></div><div class="price">Cluster A</div></div>
+        <div class="bc-row">
+          <div class="bc-metric"><span class="lbl">Crescita aprile 2026</span><span class="val" style="color:var(--verde)">+18,75%</span></div>
+          <div class="bc-metric"><span class="lbl">Formentor volume Google</span><span class="val">135k</span></div>
+        </div>
+        <div class="bc-section"><span class="lbl">Instagram, @cupra_official global<span class="verified">VERIFICATO</span></span><ul><li><strong>1.114.517 follower</strong> globali, 1.529 post</li><li>Bio: The car chooses the driver</li><li>Nessun account dedicato Italia rilevato in demo</li></ul></div>
+        <div class="bc-section"><span class="lbl">YouTube top video Formentor</span><ul><li>Motor1, Formentor 2021 perche si, <strong>665.249 views</strong></li><li>Automoto, Formentor PRO CONTRO, 353.446 views</li><li>andreagaleazzi, Formentor Plug-in, 310.694 views</li><li>Dario Zani, Formentor TDI, 298.367 views</li><li>Motor1, Formentor 2025, 159.272 views</li><li>TechDrive, Formentor MHEV, 144.226 views</li></ul></div>
+        <div class="bc-section"><span class="lbl">Positioning</span><ul><li>Brand fashion + sport accessibile</li><li>Audience demograficamente piu giovane, premium percepita</li></ul></div>
+      </div>
+
+      <div class="brand-card">
+        <div class="bc-head"><div><h4>Mazda</h4><div class="bc-sub">Giappone</div></div><div class="price">Cluster A</div></div>
+        <div class="bc-row">
+          <div class="bc-metric"><span class="lbl">CX-30 motore</span><span class="val small">2.5 eSkyactiv G</span></div>
+          <div class="bc-metric"><span class="lbl">Approccio</span><span class="val small">No 3 cilindri</span></div>
+        </div>
+        <div class="bc-section"><span class="lbl">Instagram, @mazdaitalia_official</span><ul><li><strong>~13.000 follower</strong>, da verificare</li><li>Account @mazda_italia risulta in vendita</li></ul></div>
+        <div class="bc-section"><span class="lbl">YouTube top video CX-30</span><ul><li>Motor1, CX-30 2019 perche si, <strong>341.807 views</strong></li><li>Motor1, CX-30 MY24, 224.424 views</li><li>Dario Zani, CX-30 gioie dolori, 212.759 views</li><li>Quattroruote, 2.5 ASPIRATO vs Mazda3, 135.807 views</li><li>Automoto, CX-30 2.5 e-Skyactiv G, 136.495 views</li><li>Automoto, CX-30 long test 10.000 km, 139.943 views</li></ul></div>
+        <div class="bc-section"><span class="lbl">Positioning distintivo</span><ul><li>Va controcorrente con 2.5 aspirato mild hybrid, no downsizing turbo</li><li>Asse manuale + auto cambio, design unico</li></ul></div>
+      </div>
+
+      <div class="brand-card">
+        <div class="bc-head"><div><h4>Nissan Italia</h4><div class="bc-sub">Giappone</div></div><div class="price">Cluster A</div></div>
+        <div class="bc-row">
+          <div class="bc-metric"><span class="lbl">Qashqai Q1 2026</span><span class="val">9.363</span></div>
+          <div class="bc-metric"><span class="lbl">Crescita YoY</span><span class="val" style="color:var(--verde)">+19%</span></div>
+        </div>
+        <div class="bc-section"><span class="lbl">Instagram, @nissanitaly</span><ul><li><strong>~22.000 follower</strong>, da verificare</li><li>Account @nissan.italia risulta inattivo (0 follower)</li></ul></div>
+        <div class="bc-section"><span class="lbl">YouTube top video Qashqai</span><ul><li>Motor1, Qashqai perche si 2025, <strong>211.087 views</strong></li><li>Quattroruote, Toyota vs Honda vs Nissan, 211.462 views</li><li>DriveZone, Qashqai e-Power 2025, 154.086 views</li><li>Motor1, Qashqai ibrido 2026, 68.815 views</li><li>NEWSAUTO, Qashqai e-POWER 2026, 66.325 views</li></ul></div>
+        <div class="bc-section"><span class="lbl">Leadership di segmento</span><ul><li>Qashqai leader C-SUV Italia 2026, +19% YoY</li><li>e-POWER 5-in-1 come asset tecnologico distintivo</li></ul></div>
+      </div>
+
+      <div class="brand-card">
+        <div class="bc-head"><div><h4>Peugeot Italia</h4><div class="bc-sub">Francia, Stellantis</div></div><div class="price">Cluster A</div></div>
+        <div class="bc-row">
+          <div class="bc-metric"><span class="lbl">2008 aprile 2026</span><span class="val">1.738</span></div>
+          <div class="bc-metric"><span class="lbl">2008 volume Google</span><span class="val">201k</span></div>
+        </div>
+        <div class="bc-section"><span class="lbl">Instagram, @peugeotitalia<span class="verified">VERIFICATO</span></span><ul><li><strong>104.403 follower</strong>, 2.835 post</li><li>Bio: Gamma #FullElectric e #PlugInHybrid</li><li>Benchmark mass market del Cluster A</li></ul></div>
+        <div class="bc-section"><span class="lbl">YouTube top video 2008</span><ul><li>Motor1, 2008 perche si 2020 evergreen, <strong>845.860 views</strong></li><li>Motor1, 2008 perche si 2023, 426.355 views</li><li>Motorionline, 2008 2024 come va, 179.950 views</li><li>Joe Black, 2008 GT 2026 Hybrid, 19.040 views</li></ul></div>
+        <div class="bc-section"><span class="lbl">Note critiche</span><ul><li>Cinghia a bagno olio PureTech, tema ricorrente nei contenuti utente</li><li>Best seller B-SUV Italia 2025</li></ul></div>
+      </div>
+
+    </div>
+
+    <div class="cluster-head"><h3>Cluster B, competitor Jaecoo 7 e Lepas L4, fascia 30, 40k</h3><span class="price-range">3 competitor: Volvo, BMW, Audi</span></div>
+    <div class="brand-grid">
+
+      <div class="brand-card">
+        <div class="bc-head"><div><h4>Volvo Car Italia</h4><div class="bc-sub">Svezia, gruppo Geely</div></div><div class="price">Cluster B</div></div>
+        <div class="bc-row">
+          <div class="bc-metric"><span class="lbl">XC40 volume Google</span><span class="val">590</span></div>
+          <div class="bc-metric"><span class="lbl">Volvo brand volume</span><span class="val">90.500</span></div>
+        </div>
+        <div class="bc-section"><span class="lbl">Instagram, @volvocarit</span><ul><li><strong>~78.000 follower</strong>, confermato via web search</li><li>Brand premium scandinavo, audience consolidata</li></ul></div>
+        <div class="bc-section"><span class="lbl">YouTube top video XC40</span><ul><li>Motor1, XC40 perche si 2018 evergreen, <strong>1.127.730 views</strong></li><li>Quattroruote, XC40 prova su strada, 373.897 views</li><li>Automoto, XC40 trazione integrale, 363.244 views</li><li>Motor1, XC40 2025 perche si, 234.956 views</li><li>ReDriven, XC40 USATA, 331.644 views</li></ul></div>
+        <div class="bc-section"><span class="lbl">Lineup attuale</span><ul><li>XC40 mild hybrid e PHEV</li><li>C40 Recharge BEV (anche EX40)</li><li>EX60 in arrivo come svolta elettrica brand</li></ul></div>
+      </div>
+
+      <div class="brand-card">
+        <div class="bc-head"><div><h4>BMW Italia</h4><div class="bc-sub">Germania</div></div><div class="price">Cluster B</div></div>
+        <div class="bc-row">
+          <div class="bc-metric"><span class="lbl">X1 PHEV aprile 2026</span><span class="val">650</span></div>
+          <div class="bc-metric"><span class="lbl">iX1 volume Google</span><span class="val">9.900</span></div>
+        </div>
+        <div class="bc-section"><span class="lbl">Instagram, @bmwitalia<span class="verified">VERIFICATO</span></span><ul><li><strong>331.827 follower</strong>, 1.842 post</li><li>Bio: Profilo ufficiale di BMW Italia, Piacere di Guidare</li><li>Benchmark premium del Cluster B, 13x Omoda Jaecoo</li></ul></div>
+        <div class="bc-section"><span class="lbl">TikTok</span><ul><li>Hashtag #bmwitalia attivo nella community</li><li>Account ufficiale dedicato IT da verificare</li></ul></div>
+        <div class="bc-section"><span class="lbl">YouTube top video iX1 e X1</span><ul><li>Motor1, X1 2022 retroattivo evergreen, <strong>522.002 views</strong></li><li>carwow DE, Smart #1 vs iX1, 232.884 views</li><li>Carxnl, iX1 eDrive20 POV, 85.104 views</li><li>Quattroruote, X1 stabilita, 71.102 views</li><li>Quattroruote, iX1 prima guida, 52.003 views</li><li>Automoto, iX1 310 CV anteprima, 48.343 views</li></ul></div>
+        <div class="bc-section"><span class="lbl">Asset competitivi</span><ul><li>Rete capillare 200+ concessionarie Italia</li><li>Equity premium consolidata, brand top of mind</li></ul></div>
+      </div>
+
+      <div class="brand-card">
+        <div class="bc-head"><div><h4>Audi Italia</h4><div class="bc-sub">Germania, gruppo VW</div></div><div class="price">Cluster B</div></div>
+        <div class="bc-row">
+          <div class="bc-metric"><span class="lbl">Q3 Q1 2026</span><span class="val">8.227</span></div>
+          <div class="bc-metric"><span class="lbl">Q3 YoY</span><span class="val" style="color:var(--verde)">+74%</span></div>
+        </div>
+        <div class="bc-section"><span class="lbl">Instagram, @audi_italia<span class="verified">VERIFICATO</span></span><ul><li><strong>394.913 follower</strong>, 3.287 post</li><li>Bio: Guidiamo l innovazione verso il futuro, #AvanguardiaDellaTecnica</li><li>Account global @audi 6,1M follower</li></ul></div>
+        <div class="bc-section"><span class="lbl">TikTok, @audiufficiale<span class="verified">VERIFICATO</span></span><ul><li>Handle Italia ufficiale presente</li></ul></div>
+        <div class="bc-section"><span class="lbl">YouTube top video Q3</span><ul><li>Motor1, Q3 nuovo SUV 2025, <strong>206.378 views</strong></li><li>Quattroruote, Q3 SUV piu venduta Italia, 156.436 views</li><li>Motor1, Q3 2025 perche si, 122.225 views</li><li>Quattroruote, Q3 Sportback diesel, 115.452 views</li><li>Motor1, Q3 Sportback 2026 perche si, 99.182 views</li><li>Motor1, Q3 2.0 diesel prezzo basso, 90.153 views</li></ul></div>
+        <div class="bc-section"><span class="lbl">Asset Q3</span><ul><li>2,5+ milioni di Q3 vendute globalmente dal 2011</li><li>115.000+ unita storiche in Italia</li><li>Leader gamma Audi Italia da anni</li></ul></div>
+      </div>
+
+    </div>
+
+    <h3>Note metodologiche, schede competitor</h3>
+    <ul>
+      <li><strong>Instagram</strong>, dati raccolti tramite Apify apify/instagram-profile-scraper il 21 maggio 2026, follower e post count puntuali al giorno.</li>
+      <li><strong>YouTube</strong>, top video estratti tramite DataForSEO YouTube SERP IT lingua it, query del tipo <em>[modello] recensione</em>. Views aggiornate al momento dell estrazione.</li>
+      <li><strong>Facebook</strong>, dati Meta Ads Library Italia tramite Apify curious_coder/facebook-ads-library-scraper sui brand del cliente. Per i competitor, deep dive completo previsto in fase due.</li>
+      <li><strong>TikTok</strong>, handle individuati via web search. Lo scraper Apify gratuito ha restituito demo data, per follower count e post reali serve subscription paid (~30-50 euro full crawl).</li>
+      <li><strong>Sales</strong>, dati UNRAE puntuali dove disponibili, dati di brand cumulati dove il modello singolo non e' pubblicato (es. MG totale 21.500 senza split ZS/HS/3).</li>
+    </ul>
+  </div>
+</section>
+
+<section id="trend">
+  <div class="wrap">
+    <span class="section-tag">08 Trend ricerca</span>
+    <h2>Andamento Google Trends, ultimi 12 mesi</h2>
+    <p>Indice 0, 100 normalizzato su Italia, periodo maggio 2025, maggio 2026. Fonte DataForSEO Trends API<sup><a href="#s16">[16]</a></sup>. L indice e' relativo: 100 = picco di interesse nel periodo, 50 = meta del picco.</p>
+
+    <div class="chart-box">
+      <h4>Trend brand cinesi nel mindset di ricerca italiano</h4>
+      <div class="chart-wrapper tall"><canvas id="chTrendBrand"></canvas></div>
+      <p class="source">Fonte: DataForSEO Trends, 52 settimane, Italia, web search<sup><a href="#s16">[16]</a></sup>.</p>
+    </div>
+
+    <div class="chart-box">
+      <h4>Trend modelli, Omoda 5 e Jaecoo 7 vs BYD Atto 3, Leapmotor T03, Cupra Formentor</h4>
+      <div class="chart-wrapper tall"><canvas id="chTrendModel"></canvas></div>
+      <p class="source">Fonte: DataForSEO Trends, 52 settimane, Italia, web search<sup><a href="#s16">[16]</a></sup>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="volumi">
+  <div class="wrap">
+    <span class="section-tag">09 Volumi keyword</span>
+    <h2>Volumi di ricerca Google Italia</h2>
+    <p>Fonte SEOZoom IT, media mensile su finestra 12 mesi.</p>
+
+    <div class="chart-box">
+      <h4>Volumi mensili medi, brand e modelli rilevanti</h4>
+      <div class="chart-wrapper tall"><canvas id="chVolumeBar"></canvas></div>
+      <p class="source">Fonte: SEOZoom IT, query del 21 maggio 2026<sup><a href="#s9">[9]</a></sup>.</p>
+    </div>
+
+    <p>Per la tabella completa keyword per keyword vedi versione precedente del report o l export dati grezzi. Estratto sintetico: i top per volume mensile sono <strong>Audi 301k, Ford 246k, Peugeot 2008 201k, Renault 201k, Hyundai 165k, Cupra Formentor 135k, Dacia Duster 135k, Peugeot 3008 135k, Audi Q3 110k, Nissan Qashqai 110k</strong>, mentre i brand cinesi cliente sono ancora a volume basso (Omoda 260, Jaecoo 7 1.900, Omoda 4 70, Lepas L4 zero).</p>
+  </div>
+</section>
+
+<section id="commenti">
+  <div class="wrap">
+    <span class="section-tag">10 Commenti reali</span>
+    <h2>Commenti, forum e Reddit</h2>
+    <p class="lead">Campione di commenti spontanei degli utenti su tre canali, YouTube top video, forum Quattroruote thread di indecisione, Reddit ItalyMotori. Selezione manuale rappresentativa per sentiment, con autore reale, like count e citazione fedele.</p>
+
+    <h3>YouTube, Omoda 4, Motor1 Italia, 143k views</h3>
+    <div class="video-block">
+      <div class="comment pos"><span class="author">@stefanorossi3897</span><span class="meta-c">40 like</span><div class="text">Fanno bene a portare auto cinesi in italia e creare concorrenza sul mercato, i prezzi delle auto prodotte in europa sono saliti a dismisura. MG sta vendendo alla grande perche sono auto buone a buon prezzo almeno 10k in meno di altre stesso segmento. Chi se ne frega se sono cinesi, l importante che il prodotto sia buono</div></div>
+      <div class="comment pos"><span class="author">@emanuelemustaro</span><span class="meta-c">37 like</span><div class="text">Certo continuate con i luoghi comuni sulle auto cinesi, negli anni 80-90 erano gli stessi per le giapponesi e le coreane, ne riparliamo tra qualche anno</div></div>
+      <div class="comment mix"><span class="author">@davidemonti5410</span><span class="meta-c">17 like</span><div class="text">Se costera davvero 20 k fara un gran successo</div></div>
+      <div class="comment neg"><span class="author">@pietromauro715</span><span class="meta-c">6 like</span><div class="text">E un auto oppure una console, onestamente fa tristezza vedere tutta questa gioia per una vettura che non ci appartiene</div></div>
+    </div>
+
+    <h3>YouTube, Jaecoo 7, RecensioneSmart, 577k views, sentiment fortemente critico</h3>
+    <div class="video-block">
+      <div class="comment neg"><span class="author">@francescogsr6009</span><span class="meta-c">747 like, 133 risposte</span><div class="text">Ha finanziato 30k, non sappiamo lo stipendio ma spero sia sopra la media. Io prendo oltre 2000 al mese ma finanziare 30k diventa pesante, ho fatto bene a prendere un usato da 5k in contanti</div></div>
+      <div class="comment neg"><span class="author">@tropicano75</span><span class="meta-c">218 like</span><div class="text">Dal 2016 ci ha messo 9 anni per scegliere e ha scelto questa</div></div>
+      <div class="comment mix"><span class="author">@alfetta78franchino</span><span class="meta-c">80 like</span><div class="text">Quello che nessuno dice e che la si prende unicamente perche costa poco rispetto alla concorrenza europea. Il suo unico punto di forza reale e il prezzo</div></div>
+    </div>
+
+    <h3>YouTube, Jaecoo 7 PHEV, TechDrive, 391k views</h3>
+    <div class="video-block">
+      <div class="comment mix"><span class="author">@bitbreaker79</span><span class="meta-c">391 like (top comment)</span><div class="text">Belle queste recensioni di auto cinesi ma sarebbe bello sapere di piu anche sulla rete di assistenza ed i tempi di approvvigionamento dei ricambi</div></div>
+      <div class="comment pos"><span class="author">@cesareradici6854</span><span class="meta-c">100 like</span><div class="text">Io ho un BMW x3 30e Plug in 2023, un amico ha comprato Jaecoo 7 plug in. Internamente e fatta bene di qualita, sedili riscaldati e ventilati, BMW costa quasi il doppio</div></div>
+      <div class="comment pos"><span class="author">@carlob1495</span><span class="meta-c">76 like</span><div class="text">Le auto cinesi stanno seguendo il corso degli smartphone, vinto il primo pregiudizio ne apprezzi la qualita prezzo</div></div>
+    </div>
+
+    <h3>Forum Quattroruote, thread Jaecoo 7 vs Volvo XC40 vs BMW X3 vs Velar</h3>
+    <p>Test driver del forum su Jaecoo 7 PHEV, pagina 4, luglio 2025<sup><a href="#s10">[10]</a></sup>.</p>
+    <div class="video-block">
+      <div class="comment mix"><span class="author">Test driver del forum</span><span class="meta-c">test prolungato Jaecoo 7</span><div class="text">Made in China, pur colpendo per notevole progresso e qualita prezzo, lascia ancora un residuo di diffidenza nel potenziale cliente. La garanzia totale di 7 anni dovrebbe tranquillizzare su affidabilita e durata</div></div>
+      <div class="comment pos"><span class="author">Test driver del forum</span><span class="meta-c">prime impressioni interne</span><div class="text">Aprendo la portiera la sensazione e quella di trovarsi all interno di un auto di segmento superiore o premium. Le finiture e i materiali appaiono di buona qualita</div></div>
+      <div class="comment pos"><span class="author">Test driver del forum</span><span class="meta-c">consumi reali</span><div class="text">In elettrico si percorre il centinaio di km dichiarato. Pure a batteria scarica il full-hybrid garantisce facilmente i 19 km/litro nell uso medio</div></div>
+    </div>
+
+    <h3>Reddit, community italiane</h3>
+    <div class="video-block">
+      <div class="comment pos"><span class="author">u/RevolutionaryPeak725</span><span class="meta-c">r/ItalyMotori, 50 score, 110 commenti</span><div class="text">Faccio questo post per capire la situa al sud, sono rimasto sorpreso della quantita di T03 presenti qui, ne avro viste almeno una ventina in un giorno solo</div></div>
+      <div class="comment neg"><span class="author">u/TappetoImperiale</span><span class="meta-c">r/ItalyMotori, 358 score, 205 commenti</span><div class="text">Concessionari cinesi protagonisti del fenomeno incentivi, hanno fatto firmare a migliaia di persone precontratti con caparra</div></div>
+      <div class="comment pos"><span class="author">u/CarlosEstevez_</span><span class="meta-c">r/enchufables, 8 score</span><div class="text">Jaecoo 7 es el 3er coche mas vendido en UK y Leapmotor la marca que mas crece</div></div>
+    </div>
+
+    <h3>Sintesi sentiment cross-canale</h3>
+    <div class="callout dark">
+      <h4>Cluster tematici emergenti</h4>
+      <ul>
+        <li><strong>Prezzo come driver dominante.</strong> Tema 1 in tutti i canali, percezione 30-50% in meno delle alternative europee a parita di contenuti.</li>
+        <li><strong>Obiezione rete e ricambi.</strong> Top comment piu votato 391 like sul tema rete assistenza. Ricorrente in YouTube, Reddit, Quattroruote.</li>
+        <li><strong>Valore residuo da dimostrare.</strong> Critiche al finanziamento 30k per Jaecoo 7 (747 like) riflettono il dubbio strutturale sulla tenuta di valore.</li>
+        <li><strong>Confronto smartphone come framework mentale.</strong> Samsung, Xiaomi, ascesa Made in China citati come passaggio dalla diffidenza al riconoscimento.</li>
+        <li><strong>Asse patriottico minoritario.</strong> Pochi commenti rimpiangono produzione europea, sentiment dominante e' pragmatismo prezzo prestazioni.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="insight">
+  <div class="wrap">
+    <span class="section-tag">11 Insight e azioni</span>
+    <h2>Raccomandazioni operative per Moca</h2>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Omoda 4, leve attive</h3>
+        <ul>
+          <li><strong>Cavalcare narrativa Lamborghini a 20k</strong>, gia viralizzata da Motor1 con 143k views.</li>
+          <li><strong>Asset hero su garanzia 7 anni e rete 40 dealer</strong>, riconosciuti dagli LLM e dai forum.</li>
+          <li><strong>Presidiare keyword <em>omoda 4 recensione, omoda 4 prezzo</em></strong> con landing brand prima della crescita di volumi prevista a ottobre 2026.</li>
+          <li><strong>YouTube influencer tier 2</strong> (1k-50k views) come amplificatori organici.</li>
+          <li><strong>Verifica account IG</strong>, quick win di credibilita verso il livello di BYD Italia, BMW, Audi, MG Motor.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Jaecoo 7, gestione reputation</h3>
+        <ul>
+          <li><strong>Reactive content su consumi reali</strong>, contestare narrativo HDmotori con dati indipendenti.</li>
+          <li><strong>Affrontare la svalutazione</strong>, top comment 747 like cita esplicitamente questo dubbio.</li>
+          <li><strong>Amplificare SHS-H Super Hybrid</strong>, top 10 PHEV ad aprile.</li>
+          <li><strong>Capitalizzare il caso UK</strong>, terza vettura piu venduta, asset di credibilita.</li>
+          <li><strong>Community management gruppo Facebook Jaecoo 7 Italia</strong> per intercettare conversazioni nascenti.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Lepas L4, lancio Italia</h3>
+        <ul>
+          <li><strong>Definire positioning verticale</strong> nel cluster 30-40k vs Volvo, BMW, Audi.</li>
+          <li><strong>Brand awareness da zero</strong>, programma PR e influencer tier 1 da Q3 2026.</li>
+          <li><strong>Distinguere visualmente da Omoda e Jaecoo</strong>, evitare effetto terzo brand Chery.</li>
+          <li><strong>SEO foundation</strong>, prenotare brand search prima di confusione.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Cross brand, media plan</h3>
+        <ul>
+          <li><strong>Performance Ads keyword competitor</strong>, byd atto 3, mg zs, cupra formentor con CPC 0,29-1,36 EUR.</li>
+          <li><strong>Branding YouTube</strong>, presidiare Motor1, Quattroruote, Automoto, RecensioneSmart con accordi annuali.</li>
+          <li><strong>Social organico</strong>, presidio editoriale settimanale formato test drive e benefici concreti.</li>
+          <li><strong>Content hub SEO</strong>, comparativi omoda vs byd, jaecoo vs cupra, auto cinese affidabile.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout dark" style="margin-top:24px">
+      <h4>Priorita strategiche per Moca, ordine di impatto</h4>
+      <ul>
+        <li><strong>1. Gestione reputation Jaecoo 7.</strong> Contenuti negativi da 500k+ views richiedono risposta immediata con asset proprietari e influencer partner.</li>
+        <li><strong>2. Press relations Omoda 4 ottobre 2026.</strong> Picco di interesse atteso, asset da preparare nei prossimi 4 mesi.</li>
+        <li><strong>3. Brand foundation Lepas.</strong> Posizionamento, tone of voice, SEO foundation e community readiness prima del lancio.</li>
+        <li><strong>4. Sempre on SEO content hub e performance keyword competitor.</strong> Conversioni nel breve termine.</li>
+      </ul>
+    </div>
+
+    <div class="callout">
+      <h4>Limiti del dataset e estensioni consigliate fase due</h4>
+      <ul>
+        <li><strong>TikTok scraping</strong>, scraper gratuito Apify ha restituito solo dati demo. Per follower count reali serve subscription paid Apify, costo stimato 30-50 euro per full crawl di Cluster A e B.</li>
+        <li><strong>Brand Radar Ahrefs AI Share of Voice</strong>, da integrare per tracking mensile sentiment AI cross-brand.</li>
+        <li><strong>Meta Ads Library deep dive competitor</strong>, mappare creativi BYD, MG, Leapmotor, Cupra, Volvo, BMW, Audi (oltre Omoda Jaecoo gia coperto) per angoli di vendita ricorrenti.</li>
+        <li><strong>UNRAE dati ufficiali per modello</strong>, accesso a estratti puntuali per Volvo XC40, BMW iX1, Mazda CX-30 a livello modello.</li>
+        <li><strong>Forum audit esteso</strong>, ampliare pagine 1-3 del thread Quattroruote, community Facebook BYD e Leapmotor proprietari.</li>
+        <li><strong>YouTube commenti per ogni top video competitor</strong>, attualmente 4 video coperti con 20 commenti ciascuno. Per ogni competitor coprire il top 1 video con altri 20 commenti.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="fonti" style="background:var(--bianco)">
+  <div class="wrap">
+    <span class="section-tag">12 Fonti</span>
+    <h2>Bibliografia e fonti consultate</h2>
+    <p class="lead">Tutte le fonti utilizzate in questo report. I riferimenti numerici nel testo (<sup>[1]</sup>, <sup>[2]</sup>, ecc) rimandano a questa lista.</p>
+
+    <div class="src-list">
+      <div class="src" id="s1"><span class="n">[1]</span><span class="title">Mercato auto Italia, aprile 2026 immatricolazioni +11,6%</span><span class="domain">Quattroruote, 4 maggio 2026</span><a href="https://www.quattroruote.it/news/mercato/2026/05/04/mercato_italiano_aprile_2026_.html">quattroruote.it</a></div>
+      <div class="src" id="s2"><span class="n">[2]</span><span class="title">Auto cinesi in Italia 2026</span><span class="domain">Quotidiano Motori</span><a href="https://www.quotidianomotori.com/automobili/auto-cinesi-italia-marchi-vendite-classifica-2026/">quotidianomotori.com</a></div>
+      <div class="src" id="s3"><span class="n">[3]</span><span class="title">Omoda Jaecoo cresce in Italia, 3.000 vendite febbraio</span><span class="domain">Motorionline, marzo 2026</span><a href="https://www.motorionline.com/omoda-jaecoo-cresce-in-italia-oltre-3-000-vendite-a-febbraio-e-nuovi-modelli-in-arrivo-nel-2026/">motorionline.com</a></div>
+      <div class="src" id="s4"><span class="n">[4]</span><span class="title">Lepas L4, debutto a fine 2026, prezzi 30.000 euro</span><span class="domain">Quattroruote, 27 aprile 2026</span><a href="https://www.quattroruote.it/news/nuovi-modelli/2026/04/27/lepas_l4.html">quattroruote.it</a></div>
+      <div class="src" id="s5"><span class="n">[5]</span><span class="title">AI LLM Response, ChatGPT 4.1 mini e Perplexity Sonar</span><span class="domain">DataForSEO AI Optimization API, 21 mag 2026</span></div>
+      <div class="src" id="s6"><span class="n">[6]</span><span class="title">Instagram profile scraping, tutti i brand</span><span class="domain">Apify apify/instagram-profile-scraper, 21 mag 2026</span></div>
+      <div class="src" id="s7"><span class="n">[7]</span><span class="title">YouTube SERP organici, top 30 per ogni modello</span><span class="domain">DataForSEO serp/youtube/organic, 21 mag 2026</span></div>
+      <div class="src" id="s8"><span class="n">[8]</span><span class="title">Gruppo Facebook Jaecoo 7 Italia</span><span class="domain">Facebook Groups</span><a href="https://www.facebook.com/groups/jaecoo7news/">facebook.com</a></div>
+      <div class="src" id="s9"><span class="n">[9]</span><span class="title">Keyword volumes, CPC, KD, seasonality</span><span class="domain">SEOZoom IT, 21 mag 2026</span></div>
+      <div class="src" id="s10"><span class="n">[10]</span><span class="title">Forum Quattroruote, Jaecoo 7 vs Volvo XC40 BMW X3 Velar</span><span class="domain">forum.quattroruote.it, luglio 2025</span><a href="https://forum.quattroruote.it/threads/indecisione-jaecoo-7-volvo-xc-40-bmw-x3-usata-o-velar.150009/page-4">forum.quattroruote.it</a></div>
+      <div class="src" id="s11"><span class="n">[11]</span><span class="title">Onda cinese 2025, BYD +747% e Leapmotor</span><span class="domain">Triesteallnews, gennaio 2026</span><a href="https://www.triesteallnews.it/2026/01/network-londa-cinese-travolge-il-2025-byd-747-e-leapmotor-riscrivono-la-geografia-dellauto-in-italia/">triesteallnews.it</a></div>
+      <div class="src" id="s12"><span class="n">[12]</span><span class="title">Segmento B, classifiche Q1 2026</span><span class="domain">MotorBox, aprile 2026</span><a href="https://www.motorbox.com/auto/magazine/modelli-segmento-b-vendite-italia-trimestre-2026-suv-berline">motorbox.com</a></div>
+      <div class="src" id="s13"><span class="n">[13]</span><span class="title">Aprile 2026 +11,6% futuro fa paura</span><span class="domain">Automoto, maggio 2026</span><a href="https://www.automoto.it/news/mercato-auto-aprile-2026-vola-a-116-ma-il-futuro-fa-paura-stime-tagliate-dazi-trump-e-fisco-aziendale-fermo-al-palo.html">automoto.it</a></div>
+      <div class="src" id="s14"><span class="n">[14]</span><span class="title">YouTube video commenti Omoda Jaecoo</span><span class="domain">DataForSEO serp/youtube/video/comments, 21 mag 2026</span></div>
+      <div class="src" id="s15"><span class="n">[15]</span><span class="title">Meta Ads Library Italia Omoda Jaecoo</span><span class="domain">Apify curious_coder/facebook-ads-library, 21 mag 2026</span></div>
+      <div class="src" id="s16"><span class="n">[16]</span><span class="title">Google Trends Italia 52 settimane</span><span class="domain">DataForSEO kw_data/dfs_trends, 21 mag 2026</span></div>
+      <div class="src" id="s17"><span class="n">[17]</span><span class="title">Reddit search community italiane auto</span><span class="domain">Reddit MCP Italia, 21 mag 2026</span></div>
+      <div class="src" id="s18"><span class="n">[18]</span><span class="title">Audi Q3 leader segmento Italia Q1 2026</span><span class="domain">Virgilio, aprile 2026</span><a href="https://www.virgilio.it/motori/dati-statistiche/immatricolazioni-italia-modelli-crescita-aprile-2026/328941/">virgilio.it</a></div>
+      <div class="src" id="s19"><span class="n">[19]</span><span class="title">Auto piu vendute Italia aprile 2026</span><span class="domain">Newsauto, maggio 2026</span><a href="https://www.newsauto.it/notizie/mercato-auto/auto-piu-vendute-italia-classifica-immatricolazioni-aprile-2026-616947/">newsauto.it</a></div>
+      <div class="src"><span class="n">[+]</span><span class="title">Auto cinesi 2025 quota 8,4%</span><span class="domain">Automoto, gennaio 2026</span><a href="https://www.automoto.it/news/auto-cinesi-in-italia-nel-2025-e-boom-di-vendite-una-su-dodici-e-made-in-china.html">automoto.it</a></div>
+      <div class="src"><span class="n">[+]</span><span class="title">Auto piu vendute Italia aprile 2026 Motor1</span><span class="domain">Motor1 Italia, maggio 2026</span><a href="https://it.motor1.com/news/794812/auto-piu-vendute-italia-aprile-2026-classifica/">it.motor1.com</a></div>
+      <div class="src"><span class="n">[+]</span><span class="title">Lepas iCaur Freelander novita Chery Italia</span><span class="domain">alVolante, aprile 2026</span><a href="https://www.alvolante.it/news/gruppo-chery-tante-novita-arrivo-italia-408937">alvolante.it</a></div>
+      <div class="src"><span class="n">[+]</span><span class="title">Omoda 4 caratteristiche prezzo</span><span class="domain">alVolante, novembre 2025</span><a href="https://www.alvolante.it/news/omoda-4-2026-caratteristiche-immagini-408389">alvolante.it</a></div>
+      <div class="src"><span class="n">[+]</span><span class="title">Auto ibride aprile 2026, Jaecoo 7 PHEV Top 10</span><span class="domain">Virgilio, aprile 2026</span><a href="https://www.virgilio.it/motori/dati-statistiche/auto-ibride-italia-aprile-2026/328278/">virgilio.it</a></div>
+      <div class="src"><span class="n">[+]</span><span class="title">Bene elettriche e cinesi Q1 2026</span><span class="domain">alVolante, aprile 2026</span><a href="https://www.alvolante.it/news/mercato-auto-italia-risultati-marzo-2026-e-primo-trimestre-412955">alvolante.it</a></div>
+      <div class="src"><span class="n">[+]</span><span class="title">Sorpresa Leapmotor aprile 2026</span><span class="domain">alVolante, maggio 2026</span><a href="https://www.alvolante.it/news/auto-piu-vendute-ad-aprile-2026-sorpresa-leapmotor-scuote-classifica-413643">alvolante.it</a></div>
+      <div class="src"><span class="n">[+]</span><span class="title">Omoda Jaecoo Italia Instagram</span><span class="domain">Instagram</span><a href="https://www.instagram.com/omodajaecoo.italia/">@omodajaecoo.italia</a></div>
+      <div class="src"><span class="n">[+]</span><span class="title">BYD Italia Instagram</span><span class="domain">Instagram</span><a href="https://www.instagram.com/byd.italy/">@byd.italy</a></div>
+      <div class="src"><span class="n">[+]</span><span class="title">Leapmotor Italia Instagram</span><span class="domain">Instagram</span><a href="https://www.instagram.com/leapmotor_italia/">@leapmotor_italia</a></div>
+      <div class="src"><span class="n">[+]</span><span class="title">BMW Italia Instagram</span><span class="domain">Instagram</span><a href="https://www.instagram.com/bmwitalia/">@bmwitalia</a></div>
+      <div class="src"><span class="n">[+]</span><span class="title">Peugeot Italia Instagram</span><span class="domain">Instagram</span><a href="https://www.instagram.com/peugeotitalia/">@peugeotitalia</a></div>
+      <div class="src"><span class="n">[+]</span><span class="title">MG Motor Italia Instagram</span><span class="domain">Instagram</span><a href="https://www.instagram.com/mgmotoritalia/">@mgmotoritalia</a></div>
+      <div class="src"><span class="n">[+]</span><span class="title">Audi Italia Instagram</span><span class="domain">Instagram</span><a href="https://www.instagram.com/audi_italia/">@audi_italia</a></div>
+      <div class="src"><span class="n">[+]</span><span class="title">Volvo Car Italia Instagram</span><span class="domain">Instagram</span><a href="https://www.instagram.com/volvocarit/">@volvocarit</a></div>
+      <div class="src"><span class="n">[+]</span><span class="title">Dacia Italia Instagram</span><span class="domain">Instagram</span><a href="https://www.instagram.com/dacia_italia/">@dacia_italia</a></div>
+      <div class="src"><span class="n">[+]</span><span class="title">Renault Italia Instagram</span><span class="domain">Instagram</span><a href="https://www.instagram.com/renault_italia/">@renault_italia</a></div>
+      <div class="src"><span class="n">[+]</span><span class="title">Audi Italia TikTok</span><span class="domain">TikTok</span><a href="https://www.tiktok.com/@audiufficiale">@audiufficiale</a></div>
+      <div class="src"><span class="n">[+]</span><span class="title">Omoda Jaecoo Italia TikTok</span><span class="domain">TikTok</span><a href="https://www.tiktok.com/@omodajaecoo.italia">@omodajaecoo.italia</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="https://mocainteractive.com/assets/svg/logo-light.svg" alt="Moca Interactive">
+    <p>Analisi Omoda Jaecoo Lepas Italia, prodotta da Moca Interactive, versione 3 del 21 maggio 2026.<br>Dati UNRAE, Quattroruote, Motor1, Newsauto, alVolante, Motorionline, Quotidiano Motori, Reddit MCP, SEOZoom, DataForSEO, Apify, Instagram, TikTok, Meta Ads Library, Facebook.</p>
+  </div>
+</footer>
+
+<script>
+const moca={rosso:'#E52217',grigioScuro:'#191919',grigioTesto:'#595959',verde:'#118541',blu:'#5781FF',viola:'#551FC4',rosa:'#CE2A59',arancione:'#DB5E29',grigio:'#484848'};
+Chart.defaults.font.family="'Figtree','Helvetica Neue',Arial,sans-serif";
+Chart.defaults.font.size=11;
+Chart.defaults.color=moca.grigioTesto;
+
+new Chart(document.getElementById('chBrand2025'),{
+  type:'bar',
+  data:{labels:['MG','BYD','DR','Omoda Jaecoo','Leapmotor'],datasets:[{label:'Immatricolazioni 2025',data:[49904,23621,18315,15540,7469],backgroundColor:[moca.rosso,moca.blu,moca.grigio,moca.arancione,moca.verde]}]},
+  options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.parsed.y.toLocaleString('it-IT')+' immatricolazioni'}}},scales:{y:{beginAtZero:true,ticks:{callback:v=>v.toLocaleString('it-IT')}}}}
+});
+
+new Chart(document.getElementById('chBrand2026'),{
+  type:'bar',
+  data:{labels:['MG','BYD','Leapmotor','Omoda Jaecoo'],datasets:[{label:'Immatricolazioni 4 mesi 2026',data:[21500,17479,16135,12848],backgroundColor:[moca.rosso,moca.blu,moca.verde,moca.arancione]}]},
+  options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.parsed.y.toLocaleString('it-IT')+' immatricolazioni'}}},scales:{y:{beginAtZero:true,ticks:{callback:v=>v.toLocaleString('it-IT')}}}}
+});
+
+const trendBrand={
+  labels:['mag','giu','giu','giu','giu','lug','lug','lug','lug','ago','ago','ago','ago','ago','set','set','set','set','ott','ott','ott','ott','nov','nov','nov','nov','dic','dic','dic','dic','gen','gen','gen','gen','feb','feb','feb','feb','mar','mar','mar','mar','apr','apr','apr','apr','mag','mag','mag','mag','mag'],
+  omoda:[12,11,14,5,3,14,14,10,22,22,21,29,14,16,16,24,17,19,17,21,29,26,23,24,22,25,14,19,14,11,17,18,9,32,27,13,26,13,32,39,25,29,30,23,39,15,23,20,44,32,29,6],
+  jaecoo:[10,3,0,9,5,12,7,16,16,6,8,9,14,26,14,14,12,16,23,20,21,10,14,12,7,10,10,8,10,11,6,6,6,17,22,5,11,12,13,12,11,12,14,6,34,11,20,27,21,11,18,43],
+  byd:[92,56,45,30,41,58,32,60,54,66,31,61,62,66,100,87,69,65,55,59,63,60,56,50,53,57,42,45,37,53,38,56,68,83,46,46,52,36,38,36,36,84,39,54,44,38,65,60,64,52,64,76],
+  leapmotor:[2,4,4,3,4,4,14,1,7,6,7,9,3,7,19,11,22,36,23,29,29,36,36,25,23,23,31,10,21,10,12,19,23,15,11,17,22,13,20,12,24,17,23,18,19,20,30,12,20,45,24,51]
+};
+new Chart(document.getElementById('chTrendBrand'),{
+  type:'line',data:{labels:trendBrand.labels,datasets:[
+    {label:'Omoda',data:trendBrand.omoda,borderColor:moca.rosso,backgroundColor:moca.rosso+'22',tension:.3,borderWidth:2,pointRadius:0},
+    {label:'Jaecoo',data:trendBrand.jaecoo,borderColor:moca.arancione,backgroundColor:moca.arancione+'22',tension:.3,borderWidth:2,pointRadius:0},
+    {label:'BYD',data:trendBrand.byd,borderColor:moca.blu,backgroundColor:moca.blu+'22',tension:.3,borderWidth:2,pointRadius:0},
+    {label:'Leapmotor',data:trendBrand.leapmotor,borderColor:moca.verde,backgroundColor:moca.verde+'22',tension:.3,borderWidth:2,pointRadius:0}
+  ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'top'}},scales:{y:{beginAtZero:true,max:100,title:{display:true,text:'Indice 0, 100'}}}}
+});
+
+const trendModel={
+  labels:trendBrand.labels,
+  omoda5:[25,15,14,14,30,15,18,9,18,18,29,42,21,37,25,27,29,39,21,28,28,21,29,41,26,30,38,23,16,28,27,33,27,31,41,20,32,30,23,35,25,27,22,35,30,21,15,23,33,12,41,11],
+  jaecoo7:[16,11,14,12,12,19,27,17,31,26,22,17,27,31,25,29,26,23,22,21,19,20,24,15,20,20,21,17,14,19,25,17,27,19,30,4,21,20,12,18,16,26,16,21,16,17,33,30,24,24,14,18],
+  leapmotorT03:[5,8,5,3,9,8,3,2,6,6,7,4,12,15,16,33,54,79,43,46,57,85,100,59,38,45,31,21,30,25,25,18,20,30,14,20,21,18,27,24,44,30,25,28,43,41,39,33,28,44,38,11],
+  bydAtto3:[2,0,5,2,2,7,4,3,5,6,3,8,7,4,7,11,3,10,7,8,4,6,4,2,8,10,2,3,7,4,10,12,6,2,6,1,2,9,11,5,7,2,10,13,10,9,4,11,9,4,6,14],
+  cupra:[15,24,23,27,15,23,21,15,26,24,28,27,26,27,26,28,35,38,31,30,29,23,22,20,30,19,24,20,17,17,17,14,34,23,21,27,32,26,20,24,28,19,17,17,27,15,10,19,18,16,33,11]
+};
+new Chart(document.getElementById('chTrendModel'),{
+  type:'line',data:{labels:trendModel.labels,datasets:[
+    {label:'Omoda 5',data:trendModel.omoda5,borderColor:moca.rosso,tension:.3,borderWidth:2,pointRadius:0},
+    {label:'Jaecoo 7',data:trendModel.jaecoo7,borderColor:moca.arancione,tension:.3,borderWidth:2,pointRadius:0},
+    {label:'Leapmotor T03',data:trendModel.leapmotorT03,borderColor:moca.verde,tension:.3,borderWidth:2,pointRadius:0},
+    {label:'BYD Atto 3',data:trendModel.bydAtto3,borderColor:moca.blu,tension:.3,borderWidth:2,pointRadius:0},
+    {label:'Cupra Formentor',data:trendModel.cupra,borderColor:moca.viola,tension:.3,borderWidth:2,pointRadius:0}
+  ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'top'}},scales:{y:{beginAtZero:true,max:100,title:{display:true,text:'Indice 0, 100'}}}}
+});
+
+new Chart(document.getElementById('chVolumeBar'),{
+  type:'bar',
+  data:{labels:['audi q3','peugeot 3008','dacia duster','cupra formentor','nissan qashqai','renault captur','ford puma','nissan juke','citroen c3 aircross','mg hs','mg zs','byd atto 3','hyundai bayon','leapmotor t03','bmw ix1','byd seal u','leapmotor c10','omoda 5','jaecoo 7','volvo xc40','omoda 4'],
+    datasets:[{label:'Volume mensile medio',data:[110000,135000,135000,135000,110000,110000,201000,74000,33100,33100,27100,27100,27100,12100,9900,8100,6600,1900,1900,590,70],backgroundColor:moca.rosso}]},
+  options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.parsed.x.toLocaleString('it-IT')+' ricerche mese'}}},scales:{x:{ticks:{callback:v=>v.toLocaleString('it-IT')}}}}
+});
+</script>
+
+</body>
+</html>
